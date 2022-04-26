@@ -5,8 +5,9 @@ public class Coche {
     public static String modelo;
     public final int potencia;
 
-    public Coche(int potencia) {
+    public Coche(int potencia, String nuevoModelo) {
         this.potencia = potencia;
+        modelo = nuevoModelo;
     }
 
     public static void frenar(){
