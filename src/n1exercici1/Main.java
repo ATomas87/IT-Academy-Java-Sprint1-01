@@ -19,7 +19,7 @@ public class Main {
         Percusion platillos = new Percusion("Platillos", 50);
 
         List<Instrumento> instrumentos = Arrays.asList(saxofon, trompeta, trombon, guitarra, violin, bajo, tambor, bombo, platillos);
-        instrumentos.forEach(instrumento -> System.out.println(instrumento.tocar()));
+        instrumentos.forEach(Instrumento::tocar);
 
         System.out.println("Número de veces que se ha cargado la clase Viento: " + Viento.getContador());
         System.out.println("Número de veces que se ha cargado la clase Cuerda: " + Cuerda.getContador());

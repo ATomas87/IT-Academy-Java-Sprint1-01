@@ -36,5 +36,5 @@ public abstract class Instrumento {
         this.precio = precio;
     }
 
-    public abstract String tocar();
+    public abstract void tocar();
 }

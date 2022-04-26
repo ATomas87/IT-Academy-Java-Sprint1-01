@@ -17,7 +17,7 @@ public class Percusion extends Instrumento {
     }
 
     @Override
-    public String tocar() {
-        return "Està sonant un instrument de percussió";
+    public void tocar() {
+        System.out.println("Està sonant un instrument de percussió");
     }
 }

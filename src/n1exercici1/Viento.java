@@ -15,7 +15,7 @@ public class Viento extends Instrumento {
         return contador;
     }
     @Override
-    public String tocar() {
-        return "Està sonant un instrument de vent";
+    public void tocar() {
+        System.out.println("Està sonant un instrument de vent");
     }
 }
