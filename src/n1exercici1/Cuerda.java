@@ -9,7 +9,7 @@ public class Cuerda extends Instrumento {
 
     static {
         contador++;
-        System.out.println("Clase Viento cargada.");
+        System.out.println("Clase Cuerda cargada.");
     }
 
     public static int getContador() {

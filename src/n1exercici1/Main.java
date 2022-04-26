@@ -1,5 +1,9 @@
 package n1exercici1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Viento saxofon = new Viento("Saxofón", 150);
@@ -13,6 +17,9 @@ public class Main {
         Percusion tambor = new Percusion("Tambor", 50);
         Percusion bombo = new Percusion("Bombo", 150);
         Percusion platillos = new Percusion("Platillos", 50);
+
+        List<Instrumento> instrumentos = Arrays.asList(saxofon, trompeta, trombon, guitarra, violin, bajo, tambor, bombo, platillos);
+        instrumentos.forEach(instrumento -> System.out.println(instrumento.tocar()));
 
         System.out.println("Número de veces que se ha cargado la clase Viento: " + Viento.getContador());
         System.out.println("Número de veces que se ha cargado la clase Cuerda: " + Cuerda.getContador());
