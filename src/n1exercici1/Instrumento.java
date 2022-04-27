@@ -4,9 +4,20 @@ public abstract class Instrumento {
     private String nombre;
     private double precio;
 
+    private static int contador;
+
     public Instrumento(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
+    }
+
+    static {
+        contador++;
+        System.out.println("Clase Instrumento cargada.");
+    }
+
+    public static int getContador(){
+        return contador;
     }
 
     public String getNombre() {
@@ -25,5 +36,5 @@ public abstract class Instrumento {
         this.precio = precio;
     }
 
-    public abstract String tocar();
+    public abstract void tocar();
 }
